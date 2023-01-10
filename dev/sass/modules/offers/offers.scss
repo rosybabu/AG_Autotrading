@@ -1,0 +1,176 @@
+.offers--container {
+    width: 76%;
+    margin: 0 auto;
+
+    @include tablet {
+        width: 100%;
+    }
+
+    .main-title {
+        h3 {
+            text-transform: capitalize;
+        }
+
+    }
+
+    .main-back {
+        @include tablet {
+            padding: 0 30px;
+        }
+    }
+
+    .main-title {
+        @include tablet {
+            padding: 0 30px;
+        }
+    }
+
+    .offer__wrapper {
+       
+    }
+    .offer__image {
+        height: 370px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .offer__position--top {
+        position: absolute;
+        top: 0px;
+        width: 200px;
+        padding: 40px 95px;
+
+        @include tablet {
+            padding: 30px 30px;
+        }
+
+        h5 {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 120%;
+            color: $color-white;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            text-transform: capitalize;
+
+            @include tablet {
+                font-size: 32px;
+            }
+        }
+
+        p {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 140%;
+            color: $color-white;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+
+            @include tablet {
+                font-size: 12px;
+                color: $color-black;
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+            }
+        }
+    }
+
+    .offer__position--bottom {
+        position: absolute;
+        bottom: 0px;
+        color: $color-white;
+        padding: 30px 95px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 140%;
+        @include tablet {
+            padding: 30px 30px;
+            font-size: 12px;
+        }
+    }
+}
+
+
+.offer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    @include tablet{
+        display: block;
+        padding: 40px 40px;
+    }
+    h4.offer__title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 115%;
+        color: #313333;
+        padding-bottom: 12px;
+    }
+    
+    .offer__left {
+        width: 70%;
+        @include tablet{
+            width: 100%;
+        }
+    }
+    
+    p.offer__text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        color: #313333;
+    }
+}
+
+.offer__right {
+    width: 30%;
+    @include tablet{
+        width: 100%;
+    }
+    .btn{
+        background: $color-red;
+    color: #fff;
+
+    }
+}
+.offer__row{
+    position: relative;
+    margin-bottom: 20px;
+}
+span#valid-msg {
+    font-size: 12px;
+    text-transform: capitalize;
+}
+.iti__flag-container {
+    top: 13px;
+}
+#phone::-webkit-input-placeholder {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    color: #636469;
+  }
+  #pphone::-webkit-input-placeholder {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    color: #636469;
+  }
+  #vsphone::-webkit-input-placeholder {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    color: #636469;
+  }
+
+  .section__tabs__search .select2-selection__arrow {
+    display: none;
+}

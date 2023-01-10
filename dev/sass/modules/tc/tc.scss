@@ -1,0 +1,72 @@
+.tc--container {
+    width: 75%;
+    margin: 0 auto;
+    @include tablet{
+        width: 100%;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+    .tc__row--title {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 115%;
+        color: #252532;
+        text-transform: capitalize;
+        padding-bottom: 30px;
+        @include tablet{
+            font-size: 20px;
+            padding-bottom: 24px;
+        }
+    }
+    
+    .tc__row--subtitle {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 115%;
+        color: $color-greycolor;
+        padding-bottom: 12px;
+        @include tablet{
+            font-size: 14px;
+            padding-bottom: 8px;
+        }
+    }
+    
+    .tc__row--text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        color: $color-greycolor;
+    }
+    
+    .tc__row {
+        padding-bottom: 100px;
+        @include tablet{
+            padding-bottom: 36px;
+        }
+    }
+    .tc__row--details{
+        padding-bottom: 12px;
+    }
+}
+
+.tc__contact--title {
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 140%;
+    color: $color-greycolor;
+    @include tablet{
+        font-size: 16px;
+    }
+}
+
+.tc__contact .contact__us--details {
+    margin-top: 50px;
+    @include tablet{
+        margin-top: 24px;
+    }
+}

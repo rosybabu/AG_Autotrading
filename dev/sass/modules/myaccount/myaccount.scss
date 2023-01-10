@@ -1,0 +1,109 @@
+.myaccount--container {
+    width: 75%;
+    margin: 0 auto;
+
+    @include tablet {
+        width: 100%;
+        padding: 0 36px;
+        box-sizing: border-box;
+    }
+
+    .myaccount--welcometitle {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 140%;
+        color: #636469;
+        text-transform: capitalize;
+
+        @include tablet {
+            font-size: 14px;
+        }
+    }
+
+    .myaccount--subtitle {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 140%;
+        color: $color-greycolor;
+
+        @include tablet {
+            font-size: 24px;
+        }
+    }
+
+    .myaccount__content {
+        max-width: 480px;
+        margin: 0 auto;
+        padding-top: 65px;
+
+        @include tablet {
+            padding-top: 54px;
+        }
+    }
+
+
+
+    .myaccount__form--input {
+        padding-bottom: 37px;
+        @include tablet {
+            padding-bottom: 24px;
+        }
+        label {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 140%;
+            color: #636469;
+            text-transform: capitalize;
+            margin-bottom: 4px;
+
+            @include tablet {
+                font-size: 14px;
+            }
+        }
+
+        input {
+            background: $color-bgwhite;
+            border-radius: 40px;
+        }
+    }
+
+    button {
+        margin-top: 53px;
+        background: $color-red;
+        border-radius: 27px;
+        color: $color-white;
+        width: 480px;
+        font-size: 20px;
+        @include tablet {
+            margin-top: 29px;
+            width: 100%;
+            padding: 11px 17px;
+            font-size: 16px;
+        }
+    }
+
+    .myaccount__links {
+        margin-top: 40px;
+        @include tablet {
+            margin-top: 24px;
+        }
+        a {
+            display: block;
+            text-align: center;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 114%;
+            color: #8A8A8A;
+            margin-bottom: 16px;
+            @include tablet {
+                font-size: 12px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+}

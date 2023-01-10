@@ -1,0 +1,52 @@
+.blogs__row{
+    @include tablet{
+        padding: 0 25px;
+    }
+    p{
+        strong{
+            text-transform: capitalize;
+        }
+    }
+    .main-title{
+        h3{
+            padding-bottom: 0px;
+            text-transform: capitalize;
+            
+        }
+        @include tablet{
+            padding: 0px;
+        }
+    }
+    .blogs--text {
+        float: left;
+        width: 55%;
+        padding: 10px 20px;
+        @include tablet{
+            padding: 10px 0px;
+            width: 100%;
+            float: none;
+        }
+    }
+    
+    .blogs__image {
+        width: 40%;
+        float: left;
+        @include tablet{
+            width: 100%;
+            float: none;
+        }
+    }
+    .blogs__list {
+        clear: both;
+        padding-top: 20px;
+       
+    }
+    .blogs__flex{
+        display: block;
+        margin: 0px;
+    }
+    .blogs__content{
+        padding-top: 20px;
+    }
+}
+

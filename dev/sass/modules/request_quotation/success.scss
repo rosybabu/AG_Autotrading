@@ -1,0 +1,64 @@
+.rq__success--container {
+    text-align: center;
+    padding: 140px 0px;
+}
+
+h4.rq__success--maintitle {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 140%;
+/* identical to box height, or 56px */
+    text-align: center;
+    letter-spacing: -0.04em;
+    color: $color-greycolor;
+}
+
+.rq__success--content p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 160%;
+/* or 38px */
+    text-align: center;
+    color: $color-greycolor;
+}
+
+.rq__success--content {
+    padding-top: 60px;
+}
+
+.rq__success-btn {
+    padding-top: 60px;
+    button {
+        background: $color-red;
+        border-radius: 27px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 115%;
+        letter-spacing: -0.02em;
+        color: $color-white;
+        padding: 16px 83px;
+        text-align: center;
+        text-transform: capitalize;
+        border: none;
+        margin: 0 auto;
+        display: block;
+    
+        @include tablet {
+            
+        }
+      }
+}
+
+a.rq__success-back {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #636469;
+    padding-top: 24px;
+    text-transform: capitalize;
+    display: block;
+}

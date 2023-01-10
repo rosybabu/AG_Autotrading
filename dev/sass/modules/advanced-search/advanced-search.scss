@@ -1,0 +1,430 @@
+.advanced__search {
+    width: 90%;
+    margin: 0 auto;
+
+    @include tablet {
+        width: 100%;
+        padding: 0 24px;
+        box-sizing: border-box;
+    }
+
+    .explore__vehicles--wrap {
+
+        // display: flex;
+        // flex-wrap: wrap;
+        &:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        margin: 0 -16px;
+        @include tablet {
+            margin: 0px;
+        }
+        .single__product--wrap .product__details {
+            padding: 13px 17px;
+            box-sizing: border-box;
+            width: 45%;
+        }
+
+        .single__product--wrap {
+            // height: 100%;
+            // min-height: 268px;
+        }
+
+        .product__image {
+            img {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .product__title h4 {
+            font-size: 14px !important;
+            padding-bottom: 2px;
+            height: 40px;
+        }
+
+        .single__product--wrap .product__details .product__type h5 {
+            font-size: 14px;
+        }
+
+        .single__product--wrap .product__details .product__subtitle p {
+            font-size: 13px;
+            padding-top: 6px;
+        }
+
+        .single__product--wrap .product__details span.product__tag {
+            font-size: 12px;
+            border: 1px solid #fff;
+            padding: 0px 7px;
+            margin-right: 5px;
+        }
+
+        .single__product--wrap .product__details .product__request--price {
+            font-size: 10px;
+        }
+
+        .single__product--wrap .product__details .product__specifications {
+            padding-bottom: 17px;
+        }
+
+        .single__product--wrap .product__details button {
+            font-size: 14px;
+            box-sizing: border-box;
+            padding: 4px 24px;
+        }
+
+        .product__image {
+            width: 55%;
+        }
+    }
+
+    .explore__vehicles--wrap .single__product {
+        width: 30.33%;
+        margin-bottom: 30px;
+        position: relative;
+        float: left;
+        min-height: 287px;
+
+        @include tablet {
+            width: 100%;
+            min-height: auto;
+            margin: 0px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.advanced__search--filter #select2-carbrands-results {
+    margin-left: 0px !important;
+}
+
+.advanced__search--row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -22px;
+}
+
+.advanced__filter {
+    width: calc(100%/4 - 50px);
+    margin: 0 22px;
+    margin-bottom: 30px;
+
+    @include tablet {
+        width: 100%;
+    }
+
+    label {
+        text-transform: capitalize;
+        font-size: 14px;
+    }
+}
+
+.explore__vehicle--title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 24px;
+    color: $color-black;
+    text-transform: capitalize;
+
+    @include tablet {
+        display: none;
+    }
+}
+
+.explore__vehicle--head {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 41px;
+    margin-top: 60px;
+    align-items: center;
+
+    @include tablet {
+        margin-top: 0px;
+    }
+}
+
+.advanced__clear {
+    border: 1px solid;
+    border-radius: 50px;
+    padding: 10px 10px;
+    cursor: pointer;
+
+    input[type="reset"] {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px !important;
+        line-height: 140%;
+        color: $color-greycolor;
+        background: none !important;
+        cursor: pointer;
+        text-transform: capitalize;
+    }
+}
+
+button.btn.btn-orange.btn-search {
+    background: $color-red;
+    border-radius: 27px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: -0.02em;
+    color: $color-white;
+    text-transform: capitalize;
+    min-width: 320px;
+    padding: 16px 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.advanced__search--actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include tablet {
+        display: none;
+    }
+}
+
+.label__sort {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    color: #636469;
+    text-transform: capitalize;
+    padding-bottom: 15px;
+    display: block;
+
+    @include tablet {
+        font-size: 14px;
+    }
+}
+
+.explore__dropdown-menu {
+    display: none;
+    position: absolute;
+    min-width: 240px;
+    z-index: 9999;
+    background: $color-bgwhite;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+#nav {
+    position: relative;
+}
+
+ul.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+.explore__dropdown--title {
+    padding: 10px 30px;
+    background: $color-bgwhite;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    display: block;
+    min-width: 240px;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+.explore__dropdowncontent {
+    padding: 24px 29px;
+
+    li {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 114%;
+        color: $color-black;
+        margin-bottom: 16px;
+        text-transform: capitalize;
+    }
+
+    :not(:last-child) {
+        border-bottom: 0.5px solid #DADADA;
+        padding-bottom: 12px;
+    }
+}
+
+.explore__dropdowncontent.explore__dropdown-menu.show {
+    display: block;
+}
+
+.explore__dropdown__chevron {
+    float: right;
+}
+
+.advanced__search--filterwrap {
+    @include tablet {
+        position: fixed;
+        background: $color-white;
+        top: 0px;
+        width: 100%;
+        left: 0px;
+        z-index: 999;
+        height: 100%;
+        display: none;
+        padding: 0 15px;
+        box-sizing: border-box;
+        min-height: 400px;
+        overflow: auto;
+    }
+}
+
+.advanced__search--head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 17px 30px;
+
+    @include desktop {
+        display: none;
+    }
+}
+
+.advanced__search--filterwrap.menu--open {
+    display: none;
+}
+
+ul#select2-model-results {
+    @include tablet {
+        margin-left: 0px;
+    }
+
+}
+
+ul#select2-advancedcarbrands-results {
+    // max-height: 100% !important;
+    // display: flex;
+    // flex-wrap: wrap;
+    // width: 800px !important;
+    background: #f5f5f5;
+
+    // margin-left: -110%;
+    .select2-results__option {
+        padding: 10px 15px;
+    }
+
+    // li {
+    //     text-align: center;
+    //     border: 1px solid $color-greycolor;
+    //     border-radius: 8px;
+    //     padding: 20px 20px !important;
+    //     margin: 18px 18px;
+    //     width: calc(100%/5 - 104px);
+    // }
+
+    .section__brandsrow {
+        display: block;
+    }
+}
+
+ul#select2-model-varientfilter-results {
+    background: $color-bgwhite;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+ul#select2-model-ik-results {
+    background: $color-bgwhite;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+ul#select2-color-results {
+    background: $color-bgwhite;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+ul#select2-door-results {
+    background: $color-bgwhite;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+#select2-model-pv-results {
+    background: $color-bgwhite;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+ul#ad__ses-nav {
+    margin-top: 44px;
+    margin-bottom: 54px;
+
+    @include tablet {
+        margin-bottom: 24px;
+    }
+
+    li {
+        display: inline-block;
+        border-radius: 4px 4px 0px 0px;
+        padding: 14px 36px;
+        background: #f5f5f5;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: -0.02em;
+        color: #000;
+        text-transform: capitalize;
+
+        @include tablet {
+            font-size: 14px;
+            margin-right: 0px;
+        }
+    }
+
+    li.active {
+        background: $color-red !important;
+        color: #fff !important;
+    }
+}
+
+.filter__back {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+
+    @include desktop {
+        display: none;
+    }
+}
+
+ul#select2-partbrands-results {
+    background: rgb(245, 245, 245);
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+ul#select2-brandfit-results {
+    background: rgb(245, 245, 245);
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+ul#select2-originparts-results {
+    background: rgb(245, 245, 245);
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+ul#select2-skunumber-results {
+    background: rgb(245, 245, 245);
+    border-radius: 8px;
+    padding: 10px 20px;
+}

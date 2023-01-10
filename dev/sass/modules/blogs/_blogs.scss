@@ -1,0 +1,116 @@
+.blogs--container {
+    width: 75%;
+    margin: 0 auto;
+    @include tablet{
+        width: 100%;
+    }
+    .main-back{
+        @include tablet{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+.main-title{
+    @include tablet{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+    .blogs__flex {
+        margin: 0 -20px;
+        display: flex;
+        flex-wrap:wrap;
+        @include tablet{
+            margin: 0px;
+        }
+    }
+    .blogs__flex--row {
+        display: flex;
+        flex-wrap:wrap;
+        @include tablet{
+            flex-direction: column-reverse;
+        }
+    }
+    .blogs__flex--row:nth-child(even) {
+        flex-direction: row-reverse;
+        @include tablet{
+            flex-direction: column-reverse;
+        }
+    }
+    .blogs__col {
+        width: calc(100%/2 - 40px);
+        margin: 0 20px;
+        color: $color-white;
+        margin-bottom: 44px;
+        @include tablet{
+            width: 100%;
+            margin-bottom: 20px !important;
+            margin:0px;
+        }
+        img{
+            vertical-align: middle;
+            width: 100%;
+            @include tablet{
+                height: 100%;
+            }
+        }
+    }
+    .blogs__flex--reverse{
+        @include tablet{
+            flex-direction: column-reverse;
+        }
+    }
+    .blogs__colcontent {
+        padding: 50px 85px;
+        background: #252532;
+        height: 100%;
+        box-sizing: border-box;
+    }
+    
+    .col-title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 140%;
+        color: $color-white;
+        padding-bottom: 30px;
+        @include tablet{
+            font-size: 16px;
+            padding-bottom: 25px;
+        }
+    }
+    
+    .col-text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 140%;
+        color: $color-white;
+        padding-bottom: -23px;
+        @include tablet{
+            font-size: 14px;
+        }
+    }
+    
+    .col-subtitle {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 140%;
+        color: $color-white;
+        @include tablet{
+            font-size: 14px;
+        }
+    }
+}
+
+.text-left {
+    float: left;
+}
+.text-right {
+    float: right;
+}
+.newsletter__container {
+    clear: both;
+}
+

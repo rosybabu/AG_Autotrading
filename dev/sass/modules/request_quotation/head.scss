@@ -1,0 +1,52 @@
+.head {
+    width: 80%;
+    margin: 50px auto 30px auto;
+
+    @include tablet {
+        display: none;
+    }
+
+    li {
+        display: inline-block;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #636469;
+        text-transform: capitalize;
+        margin: 0 9px;
+    }
+
+    .rq__nav--active {
+        color: $color-black;
+    }
+}
+
+.main--head {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+    color: $color-white;
+    background: $color-red;
+    padding: 30px 0px;
+    text-transform: capitalize;
+
+    @include tablet {
+        font-weight: 400;
+        font-size: 20px;
+        padding: 16px 16px;
+    }
+
+    h2 {
+        width: 80%;
+        margin: 0 auto;
+
+        @include tablet {
+            width: 100%;
+        }
+    }
+
+}
+

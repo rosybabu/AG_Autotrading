@@ -1,0 +1,558 @@
+<div class="ad__ses">
+    <ul id="ad__ses-nav">
+        <li class="vehicletab"><a href="">cars </a></li>
+        <li class="partstab"><a href="">parts</a></li>
+    </ul> <!-- END ad__ses-nav -->
+    <div id="ad__ses-content">
+        <div id="ad__se1" class="ad__se-content">
+            <div class="advanced__search--filterwrap">
+                <div class="filter__back desktop__hidden">
+                    <div class="main-back">
+                        <h6><a href="/advanced-search.html"><i class="icon-angle-left"></i><span>back</span></a></h6>
+                    </div>
+                    <div class="filter__done--btn">
+                        <button class="btn btn-outline">done</button>
+                    </div>
+                </div>
+                <form action="" id="advancedform">
+                    <div class="advanced__search--row">
+                        <div class="advanced__filter">
+                            <label for="types">Car type</label>
+                            <select id="cartype" name="states[]" class="js-example-basic-single cartype">
+                                <option value=""></option>
+                                <option value='suv' data-img_src="images/cars/suv.png">suv</option>
+                                <option value='sedan' data-img_src="images/cars/sedan.png">sedan
+                                </option>
+                                <option value='hatchback' data-img_src="images/cars/hatchback.png">
+                                    hatchback</option>
+                                <option value='luxury' data-img_src="images/cars/luxury.png">luxury
+                                </option>
+                                <option value='coupe' data-img_src="images/cars/coupe.png">coupe
+                                </option>
+                                <option value='suv' data-img_src="images/cars/suv.png">suv</option>
+                                <option value='sedan' data-img_src="images/cars/sedan.png">sedan
+                                </option>
+                                <option value='hatchback' data-img_src="images/cars/hatchback.png">
+                                    hatchback</option>
+                                <option value='luxury' data-img_src="images/cars/luxury.png">luxury
+                                </option>
+                                <option value='coupe' data-img_src="images/cars/coupe.png">coupe
+                                </option>
+                            </select>
+                        </div>
+                        <div class="advanced__filter">
+                            <label for="brands">brand</label>
+                            <select id="advancedcarbrands" name="brands[]"
+                                class="js-example-basic-single carbrands carbrands__filter">
+                                <option value=""></option>
+                                <option value='toyota' data-img_src="images/brands/bmw.png">Toyota
+                                </option>
+                                <option value='nissan' data-img_src="images/brands/nissan.png">Nissan
+                                </option>
+                                <option value='hyundai' data-img_src="images/brands/hyundai.png">Hyundai
+                                </option>
+                                <option value='lexus' data-img_src="images/brands/lexus.png">lexus
+                                </option>
+                                <option value='bmw' data-img_src="images/brands/bmw.png">BMW</option>
+                                <option value='toyota' data-img_src="images/brands/toyota.png">Toyota
+                                </option>
+                                <option value='nissan' data-img_src="images/brands/nissan.png">Nissan
+                                </option>
+                                <option value='hyundai' data-img_src="images/brands/hyundai.png">Hyundai
+                                </option>
+                                <option value='lexus' data-img_src="images/brands/lexus.png">lexus
+                                </option>
+                                <option value='bmw' data-img_src="images/brands/bmw.png">BMW</option>
+                            </select>
+                        </div>
+                        <div class="advanced__filter">
+                            <label for="fname">Model</label>
+                            <select id="model" name="model[]" class="js-example-basic-single model rq__tab--data">
+                                <optgroup label="Nissan">
+                                    <option value=""></option>
+                                    <option value='suv' data-img_src="images/cars/suv.png">sunny
+                                    </option>
+                                    <option value='sedan' data-img_src="images/cars/sedan.png">altima
+                                    </option>
+                                    <option value='hatchback' data-img_src="images/cars/hatchback.png">
+                                        x-trail</option>
+                                    <option value='luxury' data-img_src="images/cars/luxury.png">patrol
+                                    </option>
+                                </optgroup>
+                                <optgroup label="Toyota">
+                                    <option value=""></option>
+                                    <option value='suv' data-img_src="images/cars/suv.png">sunny
+                                    </option>
+                                    <option value='sedan' data-img_src="images/cars/sedan.png">altima
+                                    </option>
+                                    <option value='hatchback' data-img_src="images/cars/hatchback.png">
+                                        x-trail</option>
+                                    <option value='luxury' data-imga_src="images/cars/luxury.png">patrol
+                                    </option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="advanced__filter">
+                            <label for="fname">model variant</label>
+                            <select id="model-varientfilter" name="model[]"
+                                class="js-example-basic-single model rq__tab--data model-varient">
+                                <optgroup label="Nissan">
+                                    <option value=""></option>
+                                    <option value='suv' data-img_src="images/cars/suv.png">sunny
+                                    </option>
+                                    <option value='sedan' data-img_src="images/cars/sedan.png">altima
+                                    </option>
+                                    <option value='hatchback' data-img_src="images/cars/hatchback.png">
+                                        x-trail</option>
+                                    <option value='luxury' data-img_src="images/cars/luxury.png">patrol
+                                    </option>
+                                </optgroup>
+
+                            </select>
+                        </div>
+                        <div class="advanced__filter">
+                            <label for="fname">transmission</label>
+                            <select name="model[]" id= "transmisionfilter" class="js-example-basic-single rq__tab--data transmissionfilter">
+                                <option value=""></option>
+                                <option value='auto'>auto
+                                </option>
+                                <option value='manual'>manual
+                                </option>
+                            </select>
+                        </div>
+                        <div class="advanced__filter">
+                            <label for="fname">year</label>
+                            <select id="year" class="js-example-basic-single rq__tab--data year">
+                                <option value=""></option>
+                                <option value='2023'>2023</option>
+                                <option value='2022'>2022</option>
+                                <option value='2021'>2021</option>
+                            </select>
+                        </div>
+
+                        <div class="advanced__filter">
+                            <label for="color">color</label>
+                            <select id="color" class="js-example-basic-single rq__tab--data color">
+                                <option value=""></option>
+                                <option value='white'>white</option>
+                                <option value='black'>black</option>
+                                <option value='red'>red</option>
+                                <option value='blue'>blue</option>
+                                <option value='grey'>grey</option>
+                                <option value='beige'>beige</option>
+                            </select>
+                        </div>
+                        <div class="advanced__filter">
+                            <label for="fname">door</label>
+                            <select id="door" class="js-example-basic-single rq__tab--data door">
+                                <option value=""></option>
+                                <option value='2'>2 doors</option>
+                                <option value='3'>3 doors</option>
+                                <option value='4'>4 doors</option>
+                                <option value='5'>5 doors</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="advanced__search--actions">
+                        <div class="advanced__clear">
+                            <input type="reset" id="" value="clear all selection">
+                        </div>
+                        <div class="advanced__search--button">
+                            <button type="button" class="btn btn-orange btn-search">search</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="explore__vehicles">
+                <div class="explore__vehicle--head">
+                    <div class="explore__vehicle--title">
+                        explore vehicles
+                    </div>
+                    <div class="explore__vehicle--filterBtn desktop__hidden">
+                        Filter <a href="">Not selected</a>
+                    </div>
+                    <div class="explore__vehicle-__dropdown">
+                        <label for="" class="label__sort">sort</label>
+                        <div class="explore__dropdown">
+                            <a href="#" class="explore__dropdown--title">Featured
+                                <span class="explore__dropdown__chevron"><img src="./images/chevron.png" alt=""></span>
+                            </a>
+                            <div class="explore__dropdowncontent explore__dropdown-menu">
+                                <ul>
+                                    <li><a href="#" id="featured" data-sort-by="date_time"
+                                            data-sort-direction="desc">Featured</a></li>
+                                    <li><a href="#" id="alphBnt" data-sort-by="title" data-sort-direction="asc">Brand
+                                            A-Z</a></li>
+                                    <li><a href="#" id="alphBntdesc" data-sort-by="title"
+                                            data-sort-direction="desc">Brand Z-A</a></li>
+                                    <li><a href="#" id="year" data-sort-by="yearsort" data-sort-direction="desc">Year
+                                            high to low</a></li>
+                                    <li><a href="#" id="yeardesc" data-sort-by="yearsort" data-sort-direction="asc">year
+                                            low to high</a></li>
+                                            <li><a href="#" id="petrol_sort" data-filter=".petrol">petrol</a></li>
+                                            <li><a href="#" id="petrol_sort" data-filter=".diesel">diesel</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="explore__vehicles--wrap">
+                    <div class="single__product petrol" data-category="petrol">
+                        <div class="single__product--wrap">
+                            <div class="product__image">
+                               <img src="images/prado.png" alt="" loading="lazy">
+                            </div>
+                            <div class="product__details">
+                                <div class="product__title">
+                                    <h4>Toyota Prado</h4>
+                                </div>
+                                <div class="product__type">
+                                    <h5>GXR </h5>
+                                </div>
+                                <div class="product__subtitle">
+                                    <p>4.0 L V6 </p>
+                                    <p>AWD Full Option</p>
+                                </div>
+                              
+                            </div>
+                        </div>
+                        <div class="product__slider-bottom">
+                            <div class="product__slider-left"><div class="product__specifications">
+                                <span class="product__tag">2022</span>
+                                <span class="product__tag">0 km</span>
+                                <span class="product__tag">GCC</span>
+                                <div class="fuel_sort ">petrol</div>
+                            </div>
+                            </div> 
+                            <div class="product__slider-right"><button type="button" class="btn btn-white">explore</button> <div class="product__request--price">
+                                <a href="">Please request for price </a>
+                            </div></div> </div>
+                    </div>
+                    <div class="single__product diesel" data-category="diesel">
+                        <div class="single__product--wrap">
+                            <div class="product__image">
+                                <img src="images/patrol.png" alt="" loading="lazy">
+                            </div>
+                            <div class="product__details">
+                                <div class="product__title">
+                                    <h4>
+                                        Nissan Kicks
+                                          </h4>
+                                </div>
+                                <div class="product__type">
+                                    <h5>GXR </h5>
+                                </div>
+                                <div class="product__subtitle">
+                                    <p>4.0 L V6 </p>
+                                    <p>AWD Full Option</p>
+                                </div>
+                               
+                               
+                            </div>
+                        </div>
+                        <div class="product__slider-bottom">
+                            <div class="product__slider-left"><div class="product__specifications">
+                                <span class="product__tag">2022</span>
+                                <span class="product__tag">0 km</span>
+                                <span class="product__tag">GCC</span>
+                                <div class="fuel_sort ">diesel</div>
+                            </div>
+                            </div> 
+                            <div class="product__slider-right"><button type="button" class="btn btn-white">explore</button> <div class="product__request--price">
+                                <a href="">Please request for price </a>
+                            </div></div> </div>
+                    </div>
+                    <div class="single__product petrol" data-category="petrol">
+                        <div class="single__product--wrap">
+                            <div class="product__image">
+                                <img class="" src="images/prado.png"
+                                    alt="Banner Image" loading="lazy">
+                            </div>
+                            <div class="product__details">
+                                <div class="product__title">
+                                    <h4>Nissan magnite</h4>
+                                </div>
+                                <div class="product__type">
+                                    <h5>GXR </h5>
+                                </div>
+                                <div class="product__subtitle">
+                                    <p>4.0 L V6 </p>
+                                    <p>AWD Full Option</p>
+                                </div>
+                               
+                            </div>
+                        </div>
+                        <div class="product__slider-bottom">
+                            <div class="product__slider-left"><div class="product__specifications">
+                                <span class="product__tag">2022</span>
+                                <span class="product__tag">0 km</span>
+                                <span class="product__tag">GCC</span>
+                                <div class="fuel_sort">petrol</div>
+                            </div>
+                           </div> 
+                            <div class="product__slider-right"><button type="button" class="btn btn-white">explore</button> <div class="product__request--price">
+                                <a href="">Please request for price </a>
+                            </div></div>
+                    </div>
+                    </div>
+                    
+                </div>
+                <div id="loadMore">Load more</div>
+                <div id="showLess">Show less</div>
+            </div>
+        </div>
+        <div id="ad__se2" class="ad__se-content">
+            <div class="advanced__search--filterwrap">
+                <div class="filter__back desktop__hidden">
+                    <div class="main-back">
+                        <h6><a href="/advanced-search.html"><i class="icon-angle-left"></i><span>back</span></a></h6>
+                    </div>
+                    <div class="filter__done--btn">
+                        <button class="btn btn-outline">done</button>
+                    </div>
+                </div>
+                <form action="" id="advancedform">
+                    <div class="advanced__search--row">
+                        <div class="advanced__filter">
+                            <label for="partbrands">part brands</label>
+                            <select id="partbrands" name="partbrands[]" class="js-example-basic-single partbrands">
+                                <option value=""></option>
+                                <option value='mobil'>mobil</option>
+                                <option value='Castrol'>Castrol
+                                </option>
+                                <option value='Maxpro'>
+                                    Maxpro</option>
+                                <option value='Valvoline'>Valvoline
+                                </option>
+                                <option value='Shell'>Shell
+                                </option>
+                                <option value='Motorcraft'>Motorcraft</option>
+                                <option value='Total'>Total
+                                </option>
+                            </select>
+                        </div>
+                        <div class="advanced__filter">
+                            <label for="brands">brand fitment</label>
+                            <select id="brandfit" name="brandfit[]" class="js-example-basic-single brandfit">
+                                <option value=""></option>
+                                <option value='toyota'>Toyota
+                                </option>
+                                <option value='nissan'>Nissan
+                                </option>
+                                <option value='hyundai'>Hyundai
+                                </option>
+                                <option value='lexus'>lexus
+                                </option>
+                                <option value='bmw'>BMW</option>
+
+                            </select>
+                        </div>
+                        <div class="advanced__filter">
+                            <label for="origin">origin</label>
+                            <select id="originparts" name="origin[]"
+                                class="js-example-basic-single originparts rq__tab--data">
+                                <option value=""></option>
+                                <option value='japan'>japan
+                                </option>
+                                <option value='germany'>germany
+                                </option>
+                                <option value='china'>
+                                    china</option>
+                                <option value='korea'>korea
+                                </option>
+                                <option value='india'>india
+                                </option>
+                                <option value='saudi'>
+                                    saudi arabia</option>
+                                <option value='uae'>UAE
+                                </option>
+                            </select>
+                        </div>
+                        <div class="advanced__filter">
+                            <label for="fname">SKU Number</label>
+                            <select id="skunumber" name="model[]"
+                                class="js-example-basic-single model rq__tab--data skunumber">
+                                <option value=""></option>
+                                <option value='CD7007328'>CD7007328
+                                </option>
+                                <option value='KB234001'>KB234001
+                                </option>
+                                <option value=' AB007012'>
+                                    AB007012</option>
+                                <option value='AEO010783'>AEO010783
+                                </option>
+                                <option value='hatchback'>
+                                    CD7007328</option>
+                                <option value='KB234001'>KB234001
+                                </option>
+                                <option value='AB007012'>AB007012
+                                </option>
+
+                            </select>
+                        </div>
+                    </div>
+                    <div class="advanced__search--actions mob__hidden">
+                        <div class="advanced__clear">
+                            <input type="reset" id="" value="clear all selection">
+                        </div>
+                        <div class="advanced__search--button">
+                            <button type="button" class="btn btn-orange btn-search">search</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="parts__search--head">
+                <div class="parts__search--title">
+                    Oil & Lubricants
+                </div>
+                <div class="explore__vehicle-__dropdown">
+                    <label for="" class="label__sort">sort</label>
+                    <div class="explore__dropdown">
+                        <a href="#" class="explore__dropdown--title">Featured
+                            <span class="explore__dropdown__chevron"><img src="./images/chevron.png" alt=""></span>
+                        </a>
+                        <div class="explore__dropdowncontent explore__dropdown-menu">
+                            <ul>
+                                <li><a href="#" id="featured" data-sort-by="date_time">Featured</a></li>
+                                <li><a href="#" id="alphBnt" data-sort-by="title" data-sort-direction="asc">Brand
+                                        A-Z</a></li>
+                                <li><a href="#" id="alphBntdesc" data-sort-by="title" data-sort-direction="desc">Brand
+                                        Z-A</a></li>
+                                <li><a href="#" id="lskuno" data-sort-by="sknum" data-sort-direction="asc">lowest SKU
+                                        number</a></li>
+                                <li><a href="#" id="hskuno" data-sort-by="sknum" data-sort-direction="desc">highest SKU
+                                        number</a></li>
+                                <li><a href="#" id="price" data-sort-by="price" data-sort-direction="asc">price low to
+                                        high</a></li>
+                                <li><a href="#" id="pricedesc" data-sort-by="price" data-sort-direction="desc">price
+                                        high to low</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="parts__search--body">
+                <div class="parts__search--bodyContainer">
+                    <div class="prts__search--flex">
+                        <div class="parts__list">
+                            <div class="parts__single">
+                                <div class="parts__image">
+                                    <img src="images/parts1.png" alt="">
+                                </div>
+                                <div class="parts__content--details">
+                                    <h6 class="title">OEM Brand</h6>
+                                    <p>Description here. Lorem ipsum dolor sit amet. Ut dolor culpa non.</p>
+                                    <div class="price hidden">78</div>
+                                    <div class="sknum  hidden">CD7007328</div>
+                                    <span class="parts__price">Please request for price</span>
+                                    <div class="date_time">09/16/2022</div>
+                                    <button class="btn">see details</button>
+                                </div>
+                            </div>
+                            <div class="parts__single">
+                                <div class="parts__image">
+                                    <img src="images/parts2.png" alt="">
+                                </div>
+                                <div class="parts__content--details">
+                                    <h6 class="title">ghjk ll</h6>
+                                    <p>Description here. Lorem ipsum dolor sit amet. Ut dolor culpa non.</p>
+                                    <div class="price hidden">8</div>
+                                    <div class="sknum  hidden">KB234001</div>
+                                    <span class="parts__price">Please request for price</span>
+                                    <div class="date_time">09/13/2022</div>
+                                    <button class="btn">see details</button>
+                                </div>
+                            </div>
+                            <div class="parts__single">
+                                <div class="parts__image">
+                                    <img src="images/parts1.png" alt="">
+                                </div>
+                                <div class="parts__content--details">
+                                    <h6 class="title">lorem</h6>
+                                    <p>Description here. Lorem ipsum dolor sit amet. Ut dolor culpa non.</p>
+                                    <div class="price hidden">3</div>
+                                    <div class="sknum  hidden">AB007012</div>
+                                    <span class="parts__price">Please request for price</span>
+                                    <div class="date_time">09/21/2022</div>
+                                    <button class="btn">see details</button>
+                                </div>
+                            </div>
+                            <div class="parts__single">
+                                <div class="parts__image">
+                                    <img src="images/parts1.png" alt="">
+                                </div>
+                                <div class="parts__content--details">
+                                    <h6 class="title">AEM Brand</h6>
+                                    <p>Description here. Lorem ipsum dolor sit amet. Ut dolor culpa non.</p>
+                                    <div class="price hidden">1</div>
+                                    <div class="sknum  hidden">AEO010783</div>
+                                    <span class="parts__price">Please request for price</span>
+                                    <div class="date_time">09/09/2022</div>
+                                    <button class="btn">see details</button>
+                                </div>
+                            </div>
+                            <div class="parts__single">
+                                <div class="parts__image">
+                                    <img src="images/parts1.png" alt="">
+                                </div>
+                                <div class="parts__content--details">
+                                    <h6 class="title">OEM Brand</h6>
+                                    <p>Description here. Lorem ipsum dolor sit amet. Ut dolor culpa non.</p>
+                                    <div class="price hidden">9</div>
+                                    <div class="sknum  hidden">CD7007328</div>
+                                    <span class="parts__price">Please request for price</span>
+                                    <div class="date_time">09/30/2022</div>
+                                    <button class="btn">see details</button>
+                                </div>
+                            </div>
+                            <div class="parts__single">
+                                <div class="parts__image">
+                                    <img src="images/parts1.png" alt="">
+                                </div>
+                                <div class="parts__content--details">
+                                    <h6 class="title">OEM Brand</h6>
+                                    <p>Description here. Lorem ipsum dolor sit amet. Ut dolor culpa non.</p>
+                                    <div class="price hidden">10</div>
+                                    <div class="sknum  hidden">AB007012</div>
+                                    <span class="parts__price">Please request for price</span>
+                                    <div class="date_time">09/24/2022</div>
+                                    <button class="btn">see details</button>
+                                </div>
+                            </div>
+                            <div class="parts__single">
+                                <div class="parts__image">
+                                    <img src="images/parts1.png" alt="">
+                                </div>
+                                <div class="parts__content--details">
+                                    <h6 class="title">OEM Brand</h6>
+                                    <p>Description here. Lorem ipsum dolor sit amet. Ut dolor culpa non.</p>
+                                    <div class="price hidden">99</div>
+                                    <div class="sknum  hidden">AB007012</div>
+                                    <span class="parts__price">Please request for price</span>
+                                    <div class="date_time">09/12/2022</div>
+                                    <button class="btn">see details</button>
+                                </div>
+                            </div>
+                            <div class="parts__single">
+                                <div class="parts__image">
+                                    <img src="images/parts1.png" alt="">
+                                </div>
+                                <div class="parts__content--details">
+                                    <h6 class="title">OEM Brand</h6>
+                                    <p>Description here. Lorem ipsum dolor sit amet. Ut dolor culpa non.</p>
+                                    <div class="price hidden">23</div>
+                                    <div class="sknum  hidden">CD7007328</div>
+                                    <span class="parts__price">Please request for price</span>
+                                    <div class="date_time">09/01/2022</div>
+                                    <button class="btn">see details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- END ad__ses-content -->
+</div> <!-- END ad__ses -->

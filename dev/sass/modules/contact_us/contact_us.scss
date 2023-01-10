@@ -1,0 +1,112 @@
+.contact__form--input {
+    width: 50%;
+}
+
+.contact__form--row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -30px;
+
+    @include tablet {
+        margin: 0px;
+    }
+}
+
+.contact__us--container {
+    width: 75%;
+    margin: 0 auto;
+
+    @include tablet {
+        width: 100%;
+        padding: 0 36px;
+        box-sizing: border-box;
+    }
+
+    .btn-orange {
+        background: $color-red;
+        border-radius: 27px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 115%;
+        letter-spacing: -0.02em;
+        color: $color-white;
+        border: none;
+        padding: 16px 53px;
+        font-family: $primary-font;
+        min-width: 300px;
+
+        @include tablet {
+            font-size: 16px;
+            min-width: auto;
+            width: 100%;
+        }
+    }
+}
+
+.contact__form--input {
+    width: calc(100%/2 - 60px);
+    margin: 0 30px 37px 30px;
+
+    @include tablet {
+        width: 100%;
+        margin: 0 0px 24px 0px;
+
+    }
+
+    label {
+        text-transform: capitalize;
+
+        @include tablet {
+            font-size: 14px;
+        }
+    }
+}
+
+.contact__us--details {
+    text-align: center;
+    margin-top: 110px;
+    @include tablet {
+        margin-top: 65px;
+    }
+    p{
+        span{
+            font-weight: 600;
+        }
+    }
+}
+
+ul.tabs {
+    background: $color-bgwhite;
+    border-radius: 40px;
+
+    li {
+        display: inline-block;
+        width: calc(100%/3 - 34px);
+        text-align: center;
+        padding: 15px 15px;
+        cursor: pointer;
+        text-transform: capitalize;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 140%;
+        color: $color-greycolor;
+
+        @include tablet {
+            width: 30.33%;
+            font-size: 14px;
+            padding: 15px 3px;
+        }
+    }
+
+    li.active-tab {
+        background: #636469;
+        border-radius: 40px;
+        color: $color-white;
+    }
+}
+
+.contact__form--textarea {
+    width: auto;
+}

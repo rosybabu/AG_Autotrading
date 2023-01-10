@@ -1,0 +1,202 @@
+.about__us__container {
+    width: 75%;
+    margin: 0 auto;
+
+    @include tablet {
+        width: 100%;
+        padding: 0 24px;
+        box-sizing: border-box;
+    }
+}
+
+.main-title {
+    h3 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 140%;
+        color: $color-greycolor;
+        padding-bottom: 35px;
+
+        @include tablet {
+            font-size: 24px;
+            padding-bottom: 23px;
+            box-sizing: border-box;
+        }
+    }
+}
+
+.about__us__body {
+    p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        color: $color-greycolor;
+        padding-bottom: 15px;
+
+        @include tablet {
+            font-size: 14px;
+        }
+    }
+}
+
+.about__team__container {
+    .subtitle {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 140%;
+        color: $color-black;
+        padding-bottom: 35px;
+        padding-top: 75px;
+
+        @include tablet {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 140%;
+            color: #636469;
+            padding-bottom: 16px;
+        }
+    }
+    .about__team__image{
+        img{
+            @include tablet {
+                width: 100%;
+               height: 100%;
+            }
+        }
+    }
+}
+
+.about__team__member--wrap {
+    display: flex;
+    flex-wrap: wrap;
+    @include tablet {
+        display: block;
+    }
+    .single__member {
+        width: 50%;
+        margin-top: 97px;
+        position: relative;
+        @include tablet {
+            margin-top: 24px;
+            width: 100%;
+        }
+        &:after{
+            @include tablet{
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 1px;
+                    background: #d9d9d9;
+                
+            }
+        }
+    }
+}
+
+.single__member:nth-child(even) {
+    .single__member--wrap {
+        margin: 0 14px;
+        box-sizing: border-box;
+        @include tablet {
+            margin: 0px;
+        }
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        background: #d9d9d9;
+        margin-right: 40px;
+        @include tablet {
+            display: none;
+        }
+    }
+}
+
+.member__head {
+    display: flex;
+    align-items: center;
+
+    .member__details h5 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 140%;
+        color: $color-greycolor;
+        text-transform: capitalize;
+        @include tablet {
+            font-size: 14px;
+        }
+    }
+
+    .designation {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #636469;
+        @include tablet {
+            font-size: 11px;
+        }
+    }
+
+    .member__image {
+        margin-right: 23px;
+        width: 78px;
+        height: 78px;
+        @include tablet {
+            width: 56px;
+            height: 56px;
+        }
+        img{
+            @include tablet {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+.about__team__member {
+    padding-top: 20px;
+}
+
+.member__contactdetails {
+    display: flex;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #636469;
+    padding-top: 15px;
+    padding-bottom: 28px;
+    @include tablet{
+        padding-top: 11px;
+        font-size: 9px;
+        padding-bottom: 0px;
+    }
+}
+
+.member__email {
+    padding-right: 15px;
+}
+
+.member__phone {
+    padding-right: 15px;
+}
+
+.member__body p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #636469;
+    @include tablet{
+        font-size: 9px;
+    }
+}

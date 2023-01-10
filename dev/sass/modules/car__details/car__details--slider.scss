@@ -1,0 +1,150 @@
+
+.vehicle__detail__container {
+    width: 76%;
+    margin: 0 auto;
+    @include tablet{
+        padding: 0 24px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .main-back{
+        @include tablet{
+            float: left;
+            margin-top: 14px;
+            margin-bottom: 14px;
+        }
+        span{
+            @include tablet{
+                display: none;
+            }
+        }
+    }
+    .pdt-slider-single {
+        margin-bottom: 30px;
+    }
+    .pdtclass{
+        img{
+            border-radius: 4px;
+            width: 100%;
+            @include tablet{
+                height: 100%;
+            }
+        }
+    }
+    .pdt-slider-nav-img{
+        img{
+            border-radius: 4px;
+            width: 170px;
+            height: 90px;
+            @include tablet{
+                height: 100%;
+            }
+        }
+    }
+    button.slick-arrow {
+    top: 50%;
+    z-index: 999;
+    transform: translateY(-50%);
+    }
+
+    .slick-next {
+        right: 10px;
+        background: $color-black;
+        border-radius: 40px;
+        width: 48px;
+        height: 32px;
+
+        &:before {
+            background: url(../../images/next.png) no-repeat;
+            content: '';
+            height: 13px;
+            display: block;
+            width: 7px;
+            margin: 0 auto;
+        }
+    }
+
+    .slick-prev {
+        background: #C6C6C6;
+        border-radius: 40px;
+        width: 48px;
+        height: 32px;
+         left: 10px;
+
+        &:before {
+            background: url(../../images/prev.png) no-repeat;
+            content: '';
+            height: 13px;
+            display: block;
+            width: 7px;
+            margin: 0 auto;
+        }
+    }
+}
+span.text-uppercase {
+    text-transform: uppercase;
+}
+.details__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 128%;
+    color: $color-black;
+    margin-bottom: 16px;
+    @include tablet{
+        clear: both;
+        font-size: 16px;
+    }
+    span{
+        @include tablet{
+            display: none;
+        }
+    }
+    span.text-uppercase{
+        @include tablet{
+            font-size: 10px;
+            display: block;
+        }
+    }
+}
+ul#car-detailtabs-nav {
+    margin-top: 44px;
+    margin-bottom: 54px;
+    float: left;
+    @include tablet{
+        margin-bottom: 24px;
+    }
+    li {
+        display: inline-block;
+        text-transform: capitalize;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 128%;
+        color: $color-black;
+        margin-right: 44px;
+        @include tablet{
+            font-size: 14px;
+            margin-right: 30px;
+        }
+    }
+    li.active {
+        border-bottom: 3px solid $color-red;
+    }
+}
+.download-pdf {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 128%;
+    float: right;
+    color: $color-black;
+    margin-top: 44px;
+    @include tablet{
+        font-size: 12px;
+    margin-top: 0px;
+    float: right;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    }
+}

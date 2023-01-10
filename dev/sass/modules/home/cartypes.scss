@@ -1,0 +1,77 @@
+.car__type__container{
+    @include desktop{
+        width: 1068px;
+        margin: 80px auto;
+    }
+    @include tablet{
+        padding-top:32px;
+    }
+    
+}
+.car__row {
+    display: flex;
+    flex-wrap: wrap;
+    .disabled{
+        background: #F1F3F9 !important;
+        pointer-events: none !important;
+        opacity: 0.3;
+        h6{
+            color: #838383 !important;
+        }
+    }
+    
+.car__single {
+    margin: 18px 18px;
+    width: calc(100%/5 - 36px);
+    text-align: center;
+    padding: 63px 53px 55px 53px;
+    box-sizing: border-box;
+    background: #F1F3F9;
+    border-radius: 10px;
+    @include tablet{
+        margin: 18px 8px;
+        width: calc(100%/3 - 16px);
+        padding: 20px 20px;
+    }
+    &:hover{
+        background: #F8F9FF;
+    }
+    &:active{
+        background: #EBF0FF;
+    }
+   
+    h6 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 115%;
+        color: $color-black;
+        text-transform: capitalize;
+        padding-top: 27px;
+        @include tablet{
+            font-size: 11px;
+            padding-top: 12px;
+        }
+    }
+}
+}
+
+.car__type--title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 115%;
+    color: $color-black;
+    text-transform: capitalize;
+    padding-bottom: 40px;
+    @include tablet{
+        padding-bottom: 6px;
+        font-size: 20px;
+        padding-left: 16px;
+    }
+}
+.section__carsBtn{
+    @include tablet{
+        margin-bottom: 20px;
+    }
+}

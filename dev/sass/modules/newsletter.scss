@@ -1,0 +1,78 @@
+.newsletter__row {
+    padding: 80px 24px;
+    @include desktop{
+        width: 75%;
+        margin: 0 auto;
+    }
+    @include tablet{
+        padding: 45px 24px 30px 24px;
+    }
+}
+
+.newsletter__title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 115%;
+    color: $color-black;
+    max-width: 287px;
+    @include tablet{
+    font-size: 20px;
+    }
+}
+
+.newsletter__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include tablet{
+        display: block;
+    }
+    input[type="text"] {
+        border: none;
+        padding: 0px !important;
+        @include tablet{
+            margin-bottom: 8px;
+        }
+    }
+    p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 148%;
+        color: #717171;
+        padding-top: 16px;
+        @include tablet{
+            display: none;
+        }
+    }
+}
+
+
+
+.newsletter__inputsection {
+    border-bottom: 1px solid $color-black;
+    position: relative;
+    input{
+        background-color: transparent !important;
+    }
+}
+
+.btn-newsletter {
+    background: none;
+    border: none;
+    text-transform: uppercase;
+    position: absolute;
+    right: 0px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    @include tablet{
+        font-size: 14px;
+    }
+}
+

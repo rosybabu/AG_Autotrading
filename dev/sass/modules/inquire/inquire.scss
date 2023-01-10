@@ -1,0 +1,149 @@
+@import 'success.scss';
+@import 'inquire-parts.scss';
+.inquire__image--section {
+    float: left;
+    border: 1px solid #C0C0C0;
+    border-radius: 8px;
+    width: 50%;
+
+    @include tablet {
+        width: 100%;
+        float: none;
+    }
+}
+
+.inquire__form {
+    float: right;
+    width: 40%;
+
+    @include tablet {
+        width: 100%;
+        float: none;
+        padding-top: 60px;
+    }
+}
+
+.inquire--container {
+    width: 75%;
+    margin: 0 auto;
+
+    @include tablet {
+        width: 100%;
+        padding: 0px 30px;
+        box-sizing: border-box;
+    }
+
+    .main-title h2 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 140%;
+        color: $color-greycolor;
+        text-transform: capitalize;
+        padding-bottom: 29px;
+
+        @include tablet {
+            font-size: 20px;
+            padding-bottom: 16px;
+        }
+    }
+
+    .btn {
+        background: $color-red !important;
+        border-radius: 27px !important;
+        color: $color-white;
+        width: 100%;
+        cursor: pointer;
+        text-transform: capitalize;
+        @include tablet {
+         margin-top: 60px;
+        }
+    }
+}
+
+.inquire__details {
+    padding: 24px 24px;
+    box-sizing: border-box;
+    @include tablet {
+        padding: 14px 23px;
+    }
+
+    h4 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 128%;
+        color: $color-black;
+        @include tablet {
+            font-size: 14px;
+        }
+    }
+
+}
+
+.inquire__specs--left {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 128%;
+    color: #272727;
+    text-transform: capitalize;
+    float: left;
+    @include tablet {
+        float: none;
+        font-size: 10px;
+    }
+}
+
+.inquire__specs--right {
+    float: right;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 128%;
+    color: #272727;
+
+    @include tablet {
+        float: none;
+        font-size: 10px;
+    }
+
+    span {
+        padding-right: 20px;
+    }
+}
+
+.inquire__form--input {
+    margin-bottom: 37px;
+    @include tablet {
+       margin-bottom: 24px;
+    }
+    label {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 140%;
+        color: #636469;
+        text-transform: capitalize;
+        margin-bottom: 17px;
+        display: inline-block;
+        @include tablet {
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+    }
+
+    .inquire__form--class {
+        background: $color-bgwhite;
+        border-radius: 40px;
+    }
+}
+
+.error {
+    color: red;
+    margin-left: 5px;
+}
+
+label.error {
+    display: inline;
+}

@@ -1,0 +1,96 @@
+.why__first__row {
+    display: flex;
+    justify-content: center;
+
+    @include desktop {
+        width: 1068px;
+        margin: 0 auto;
+    }
+
+    .why__element:nth-child(2) {
+        margin-top: -95px;
+    }
+}
+
+.why__element {
+    width: 27.33%;
+
+    span {
+        display: block;
+        text-align: center;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: -0.02em;
+        color: $color-greycolor;
+        text-transform: capitalize;
+        width: 142px;
+        text-align: center;
+        margin: 0 auto;
+        @include tablet{
+            font-size: 14px;
+            line-height: 18px;
+            width: 83px;
+        }
+    }
+
+    img {
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+        @include tablet{
+            width: 18px;
+            height: 18px;
+        }
+    }
+}
+
+.why__second__row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    @include tablet{
+        margin-top: 40px;
+    }
+}
+
+.why__large--element h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: $color-black;
+    @include tablet{
+        font-size: 24px;
+        line-height: 30px;
+    }
+}
+
+.why__large--element p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: $color-greycolor;
+    @include tablet{
+        font-size: 10px;
+        line-height: 14px;
+    }
+}
+
+.why__container {
+    background: #F9F9F9;
+    padding-top: 170px;
+    padding-bottom: 143px;
+    @include tablet{
+        padding-top: 120px;
+    padding-bottom: 54px;
+    }
+}

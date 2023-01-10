@@ -1,0 +1,87 @@
+.connection__container {
+    background: $color-red;
+    .connection__row {
+        @include desktop{
+            width: 1068px;
+            margin: 0 auto;
+        }
+        padding: 70px 20px;
+        @include tablet{
+            padding: 29px 16px;
+        }
+    }
+    .connection__title {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        letter-spacing: -0.02em;
+        color: $color-white;
+        padding-bottom: 79px;
+        @include tablet{
+font-size: 24px;
+padding-bottom: 23px;
+        }
+    }
+    .connection__content {
+        @include display-flex();
+        @include justify-content(space-between);
+    }
+    .connection__leftcontent {
+        width: 30%;
+        @include tablet{
+            width: 35%;
+        }
+        p {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 37px;
+            letter-spacing: -0.02em;
+            color: $color-white;
+            padding-bottom: 45px;
+            @include tablet{
+                font-size: 12px;
+                line-height: 16px;
+            }
+        }
+        button{
+            border: 1px solid $color-white;
+            border-radius: 26px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 18px;
+            letter-spacing: -0.02em;
+            color: $color-white;
+            background: transparent;
+            padding: 17px 42px;
+            text-transform: uppercase;
+            cursor: pointer;
+            font-family: $primary-font;
+            @include tablet{
+                padding: 8px 13px;
+                font-size: 14px;
+                text-transform: capitalize;
+            }
+        }
+    }
+    
+    .connection__rightcontent {
+        width: 45%;
+        p {
+            max-width: 467px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 52px;
+            letter-spacing: -0.02em;
+            color: $color-white;
+            @include tablet{
+                font-size: 14px;
+                line-height: 16px;
+            }
+        }
+    }
+}
+
+

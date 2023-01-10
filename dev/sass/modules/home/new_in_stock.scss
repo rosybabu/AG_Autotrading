@@ -1,0 +1,99 @@
+.new__in__stock__container {
+    background: #F1F3F9;
+    padding: 60px 16px 70px;
+    @include tablet{
+        padding: 20px 16px;
+    }
+    .new__in__stock__title {
+        margin-bottom: 70px;
+        position: relative;
+        @include tablet{
+            margin-bottom: 24px;
+            display: inline-block;
+        }
+        h4 {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 130%;
+            color: $color-black;
+            @include tablet{
+                font-size: 20px
+            }
+        }
+        span{
+            font-weight: 700;
+        }
+
+    }
+
+    .new__in__stock__content {
+        @include display-flex;
+        @include align-items(flex-end);
+        @include tablet{
+            display: block;
+            @include flex-wrap(wrap);
+        }
+
+        p {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 148%;
+            color: $color-black;
+            width: 60%;
+            margin-right: 84px;
+            @include tablet{
+                font-size: 12px;
+                width: 80%;
+                margin-bottom: 17px;
+            }
+        }
+    }
+    .btn-orange {
+        background: $color-red;
+        border-radius: 27px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 115%;
+        letter-spacing: -0.02em;
+        color: $color-white;
+        border: none;
+        padding: 16px 53px;
+        font-family: $primary-font;
+        cursor: pointer;
+        @include tablet{
+            float: right;
+            padding: 8px 22px;
+            font-size: 14px;
+        }
+    }
+}
+
+
+.new__in__stock__row {
+    @include desktop{
+        width: 1068px;
+        margin: 0 auto;
+    }
+    
+}
+.new__in__stock--tag {
+    position: absolute;
+    top: 73%;
+    right: -5%;
+    transform: translate(-50%,-50%);
+    @include tablet{
+            top: 28%;
+            right: -70%;
+            transform: translate(0%, 0%); 
+            width: 227px;
+        
+    }
+    img{
+        @include tablet{
+            object-fit: contain;
+        }
+    }
+}

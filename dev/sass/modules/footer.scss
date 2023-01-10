@@ -1,0 +1,254 @@
+.footer__container {
+    background: #27272D;
+    padding: 50px 24px 38px 24px;
+
+    @include tablet {
+        padding: 22px 24px 38px 24px;
+    }
+
+    .footer__row {
+        @include desktop {
+            width: 75%;
+            margin: 0 auto;
+        }
+    }
+}
+
+.footer__contact__row {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+padding-bottom: 40px;
+    @include tablet {
+        padding-bottom: 24px;
+    }
+}
+
+.footer__phone {
+    img {
+        @include tablet {
+            width: 23px;
+            height: 23px;
+        }
+    }
+
+    span {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 115%;
+        color: $color-white;
+        margin-left: 16px;
+
+        @include tablet {
+            font-size: 16px;
+        }
+    }
+}
+
+.footer__social h6 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 115%;
+    color: $color-bgwhite;
+    text-align: center;
+    padding-bottom: 16px;
+
+    @include tablet {
+        font-size: 9px;
+        padding-bottom: 8px;
+    }
+}
+
+.footer__social__icons a {
+    margin: 0 16px;
+    display: inline-block;
+
+    @include tablet {
+        width: 24px;
+        height: 24px;
+        margin: 0 8px;
+    }
+}
+
+.footer__phone {
+    display: flex;
+    align-items: center;
+}
+
+
+.footer__links a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 115%;
+    color: $color-white;
+    text-transform: capitalize;
+
+    @include tablet {
+        font-size: 12px;
+    }
+}
+
+.footer__links {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #939393;
+    padding: 40px 0px;
+
+    @include tablet {
+        padding: 24px 0px;
+    }
+}
+
+.footer__vehicle__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 115%;
+    color: $color-white;
+    text-transform: capitalize;
+    padding-bottom: 18px;
+}
+
+.footer__links__flex a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 118%;
+    color: $color-bgwhite;
+    text-transform: capitalize;
+}
+
+.footer__links__flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer__vehicles {
+    padding: 40px 0px;
+    border-top: 1px solid #939393;
+
+    @include tablet {
+        padding: 24px 0px !important;
+    }
+}
+
+.footer__vehicles--parts {
+    border-top: 1px solid #939393;
+    padding: 40px 0px;
+
+    @include tablet {
+        padding: 24px 0px !important;
+    }
+}
+
+.footer__vehicle__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 115%;
+    color: $color-white;
+    text-transform: capitalize;
+    padding-bottom: 18px;
+    @include tablet {
+        padding-bottom:5px;
+    }
+}
+
+.footer__links__flex a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 118%;
+    color: $color-bgwhite;
+
+    @include tablet {
+        width: 32.33%;
+        white-space: normal;
+        word-break: break-word;
+        text-align: center;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+}
+
+.footer__links__flex {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include tablet {
+        overflow: hidden;
+        display: none;
+    }
+}
+
+.footer__vehicles {
+    padding: 40px 0px;
+    border-top: 1px solid #939393;
+}
+
+.footer__vehicles--parts {
+    border-top: 1px solid #939393;
+    padding: 40px 0px;
+}
+
+.bottom__footer p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 115%;
+    letter-spacing: 0.04em;
+    color: #B1B1B1;
+    text-align: center;
+}
+
+.bottom__footer__links {
+    display: inline-block;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 115%;
+    color: $color-white;
+}
+
+.bottom__footer {
+    text-align: center;
+}
+span.footer__dropdown {
+    display: none;
+    margin-left: 8px;
+    @include tablet{
+        display: inline-block;
+    }
+}
+.footer-arrow .footer__dropdown {
+    transform: rotate(180deg);
+}
+.footer__dropdown {
+    transform: rotate(0deg);
+}
+.bottom__footer__links:not(:last-child):after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    background: $color-white;
+    width: 1px;
+    top: 0px;margin-left:36px;
+}
+
+.bottom__footer__links {
+    position: relative;
+    padding:0 36px;
+    @include tablet{
+        padding: 0 20px;
+    }
+}
+footer{
+    @include tablet{
+        padding-bottom: 50px;
+    }
+}

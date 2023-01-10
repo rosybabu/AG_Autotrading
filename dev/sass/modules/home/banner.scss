@@ -1,0 +1,193 @@
+.banner__single {
+    position: relative;
+
+    .banner__content {
+        position: absolute;
+        top: 50%;
+
+        @include tablet {
+            top: 80px;
+            width: 50%;
+            left: 30px;
+            transform: translate(-50%, -50%);
+        }
+
+        .banner__title {
+            padding-bottom: 127px;
+
+            @include tablet {
+                padding-bottom: 13px;
+            }
+
+            h1 {
+                font-style: normal;
+                font-weight: 300;
+                font-size: 64px;
+                line-height: 60px;
+                letter-spacing: -0.02em;
+
+                b {
+                    font-weight: 600;
+                }
+
+                @include tablet {
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 24px;
+                    line-height: 24px;
+                }
+            }
+        }
+
+        .banner__subtitle {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 44px;
+            letter-spacing: -0.02em;
+            max-width: 400px;
+
+            @include tablet {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 24px;
+                color: $color-black;
+            }
+        }
+    }
+
+    .banner__contentleft {
+        left: 30%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+    }
+
+    .banner__contentright {
+        right: 0px;
+        transform: translate(0%, -50%);
+        width: 40%;
+
+        @include tablet {
+            width: 50%;
+        }
+    }
+    .banner__image--wrap{
+        img{
+            width: 100%;
+            @include tablet{
+                height: 390px;
+                object-fit: cover;
+            }
+         
+        }
+    }
+}
+
+.banner__row {
+    margin-bottom: 0px !important;
+
+    .slick-dots {
+        bottom: 0px;
+        margin-bottom: 15px;
+
+        @include tablet {
+            margin-bottom: 8px;
+        }
+
+        li {
+            width: 24px;
+            height: 8px;
+            opacity: 0.4;
+
+            @include tablet {
+                width: 12px;
+                height: 4px;
+                margin: 0 4px;
+            }
+
+            button {
+                width: 24px;
+                height: 8px;
+                border-radius: 5px;
+                background-color: $color-white;
+                padding: 0px;
+
+                @include tablet {
+                    width: 12px;
+                    height: 4px;
+                }
+
+                &:before {
+                    display: none;
+                }
+            }
+        }
+
+        .slick-active {
+            opacity: 1;
+        }
+    }
+
+    button.slick-arrow {
+        top: 50% !important;
+        z-index: 999;
+        transform: translate(-50%, -50%);
+    }
+
+    .slick-next {
+        left: 96% !important;
+        background: #C6C6C6;
+        opacity: 0.9;
+        border-radius: 40px;
+        width: 48px;
+        height: 32px;
+
+        @include tablet {
+            left: 90% !important;
+        }
+
+        &:before {
+            background: url(../images/next.png) no-repeat;
+            content: '';
+            height: 13px;
+            display: block;
+            width: 7px;
+            margin: 0 auto;
+        }
+    }
+
+    .slick-prev {
+        background: #C6C6C6;
+        opacity: 0.9;
+        border-radius: 40px;
+        width: 48px;
+        height: 32px;
+        left: 4%;
+
+        @include tablet {
+            left: 10% !important;
+        }
+
+        &:before {
+            background: url(../images/prev.png) no-repeat;
+            content: '';
+            height: 13px;
+            display: block;
+            width: 7px;
+            margin: 0 auto;
+        }
+    }
+}
+
+.banner__imgtag {
+    width: 100%;
+}
+
+.text-white {
+    color: $color-white;
+}
+
+.text-black {
+    color: $color-black;
+}

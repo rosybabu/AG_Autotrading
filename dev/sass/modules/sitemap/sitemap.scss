@@ -1,0 +1,39 @@
+.sitemap--page {
+    width: 75%;
+    margin: 0 auto;
+    @include tablet{
+        width: 100%;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    li {
+        width: calc(100%/3);
+        text-align: center;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 115%;
+        color: #313333;
+        padding-bottom: 40px;
+        @include tablet{
+            width: 100%;
+            font-size: 14px;
+            text-align: left;
+            padding-bottom: 24px;
+        }
+    }
+    .sitemap__flex {
+        margin-bottom: 100px;
+        @include tablet{
+            margin-bottom: 90px;
+        }
+    }
+}
+
